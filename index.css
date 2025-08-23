@@ -1,104 +1,82 @@
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: 'roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
     color: #888;
-    text-align: center;
 }
 .parent-container {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: white;
 }
 .login-form {
-    width: 30%;
-    padding: 30px;
     display: flex;
+    flex: 30%;
     flex-direction: column;
+    justify-content: center;
+    padding: 40px;
 }
-
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 25px 0px 5px 45px;
+    margin-bottom: 40px;
+}
 .logo {
     width: 150px;
     height: 80px;
 }
+h3 {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    padding: 0px;
+}
 .form-container {
     display: flex;
     flex-direction: column;
-    padding: 25px 25px 30px 25px;
-    text-align: left;
-}
-.login-form h3 {
-    margin: 0px 0px 15px;
-    color: #555;
-    font: 5px;
 }
 .login-form input {
-    margin-bottom: 15px;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border: 1px solid #dfdfdf;
     border-radius: 4px;
-    width: 100%;
-    box-sizing: border-box;
- }
+    color: #888;
+}
 .login-form button {
     padding: 12px;
-    font-size: 16px;
-    background-color: #35AA47;
-    color: white;
-    border: none;
     border-radius: 4px;
-    cursor: pointer;
+    border: none;
+    background: #35aa47;
+    font-size: 16px;
+    color: #ffffff;
 }
 .login-form button:hover {
-    background-color: #424242;
+    background: #424242;
 }
-.forgot-password {
-    font: 1px;
+.form-container p {
     color: #444444;
+    font: 6px;
 }
-/* .forgot-password i {
-    color: black;
-} */
 .image-container {
-    width: 70%;
-    height: 100vh;
+    display: flex;
+    flex: 70%;
 }
-.image-container img {
+.bg-image img {
     width: 100%;
-    height: 100vh;
     object-fit: cover;
 }
 
-@media (min-width:300px) and (max-width:600px) {
+@media (max-width: 600px) {
     body {
-        flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
     .parent-container {
+        display: flex;
         flex-direction: column;
-        height: auto;
-        align-items: normal;
     }
-    .login-form {
-    height: 30%;
-    width: 100vw;
-    }
-    /* .logo-container {
-        padding-top: 25px;
-        padding-bottom: 5px;
-        padding-left: 45px;
-    }*/
-    .form-container {
-        padding: 25px 25px 30px 25px;
-    }
-    .image-container {
-    height: 70%;
-    width: 100vw;
-}
 }
